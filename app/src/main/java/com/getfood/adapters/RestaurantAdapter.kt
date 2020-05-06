@@ -92,12 +92,7 @@ class RestaurantAdapter :
     }
 
     override fun getItemCount(): Int {
-        /*var count = 0
-        count += items.size
-        items.forEach { entry ->
-            count += entry.value.size
-        }
-        return count + if (showLoadingMore) 1 else 0*/
+
         return currentList.size + if (showLoadingMore) 1 else 0
     }
 

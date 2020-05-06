@@ -74,7 +74,6 @@ class RestaurantListFragment : Fragment() {
         }
 
         viewModel.results.observe(viewLifecycleOwner) { restaurants ->
-            //println(result.toString())
             binding.progressBar.visibility = View.GONE
             adapter.submitList(restaurants)
         }

@@ -31,7 +31,6 @@ abstract class InfiniteScrollListener(
     abstract fun onLoadMore()
 
     companion object {
-        // The minimum number of items remaining before we should loading more.
         private const val VISIBLE_THRESHOLD = 3
     }
 }
